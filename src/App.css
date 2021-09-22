@@ -32,6 +32,7 @@
   --font-18px: 1.125rem;
   --font-16px: 1rem;
   --font-14px: 0.875rem;
+  --font-12px: 0.75rem;
 }
 
 /* colors */
@@ -43,6 +44,9 @@
 }
 .color-grey {
   color: var(--clr-gray);
+}
+.color-grey-2 {
+  color: #797e87;
 }
 .color-red {
   color: var(--clr-red);
@@ -77,6 +81,9 @@ p {
   font-size: var(--font-16px); /* 16px */
 }
 
+.px-12 {
+  font-size: var(--font-12px); /* 14px */
+}
 .px-14 {
   font-size: var(--font-14px); /* 14px */
 }
@@ -85,9 +92,6 @@ p {
 }
 .px-16 {
   font-size: var(--font-16px);
-}
-.px-14 {
-  font-size: var(--font-14px);
 }
 .px-20 {
   font-size: var(--font-20px);

@@ -1,0 +1,14 @@
+.sidebar_button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sidebar_button_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar_button_text {
+  font-style: normal;
+  line-height: 21px;
+}

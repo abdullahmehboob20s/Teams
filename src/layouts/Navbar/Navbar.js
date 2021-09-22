@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import logo from "assets/images/logo.png";
-import homeIcon from "assets/images/home-icon.png";
 import NavLink from "components/Navbar/NavLink/NavLink";
+import homeIcon from "assets/images/home-icon.png";
 import plusIcon from "assets/images/plus-icon.png";
 import locationIcon from "assets/images/location-icon.png";
 import peopleIcon from "assets/images/people-icon.png";
@@ -11,7 +11,16 @@ import user from "assets/images/user.png";
 import hamburger from "assets/images/hamburger.png";
 import Input from "components/Input/Input";
 
-function Navbar() {
+function Navbar(props) {
+  const {
+    navbarLinks = [
+      { title: "Home", icon: homeIcon, to: "/" },
+      { title: "Create", icon: plusIcon, to: "/" },
+      { title: "Discover", icon: locationIcon, to: "/" },
+      { title: "Communities", icon: peopleIcon, to: "/community-settings" },
+      { title: "Notifications", icon: bellIcon, to: "/" },
+    ],
+  } = props;
   return (
     <div className="navbar">
       <div className="nav_left gap-10">
@@ -19,11 +28,14 @@ function Navbar() {
         <Input placeholder="Search" />
       </div>
       <div className="nav_center">
-        <NavLink gap="gap-0" title="Home" icon={homeIcon} to="/" />
-        <NavLink gap="gap-0" title="Create" icon={plusIcon} to="/" />
-        <NavLink gap="gap-0" title="Discover" icon={locationIcon} to="/" />
-        <NavLink gap="gap-0" title="Communities" icon={peopleIcon} to="/" />
-        <NavLink gap="gap-0" title="Notifications" icon={bellIcon} to="/" />
+        {navbarLinks.map((navLink, index) => (
+          <NavLink
+            gap="gap-3"
+            title={navLink.title}
+            icon={navLink.icon}
+            to={navLink.to}
+          />
+        ))}
       </div>
       <div className="nav_right">
         <NavLink
