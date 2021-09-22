@@ -1,0 +1,22 @@
+.navbar {
+  background-color: var(--clr-dark-blue);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 3.938rem;
+  justify-content: space-between;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+.nav_center {
+  display: flex;
+  align-items: center;
+  gap: 3.938rem;
+}
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+}

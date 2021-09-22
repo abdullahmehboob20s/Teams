@@ -1,0 +1,22 @@
+.profile_activities_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 82px;
+  padding: 0 3rem;
+
+  padding-bottom: 47px;
+  border-bottom: 0.3px solid #6b6c6e;
+}
+.profile_activity {
+  /* border: 2px solid red; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-center {
+  border-left: 1px solid rgba(107, 108, 110, 0.4);
+  border-right: 1px solid rgba(107, 108, 110, 0.4);
+}

@@ -1,0 +1,42 @@
+/* my_teams */
+.my_teams {
+  background: var(--clr-dark-blue);
+  padding: 3.313rem 4.375rem;
+  border-radius: 5px;
+  /* margin-bottom: 12.563rem; */
+  padding-bottom: 15rem;
+}
+
+/* my_teams_cards */
+.my_teams_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11.063rem;
+}
+.my_teams_cards_stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.team_card_img {
+  width: 142px;
+  height: 140px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.myTeam_stat_card {
+  padding: 5rem 0;
+}
+
+.myTeam_stat_card:nth-child(1) {
+  border-right: 1px solid rgba(150, 147, 158, 0.8);
+  border-bottom: 1px solid rgba(150, 147, 158, 0.8);
+}
+.myTeam_stat_card:nth-child(2) {
+  border-bottom: 1px solid rgba(150, 147, 158, 0.8);
+}
+.myTeam_stat_card:nth-child(3) {
+  border-right: 1px solid rgba(150, 147, 158, 0.8);
+}

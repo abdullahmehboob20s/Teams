@@ -1,0 +1,11 @@
+.nav_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav_link.flex {
+  flex-direction: row;
+}
+.navLink_img {
+  position: relative;
+}

@@ -1,0 +1,19 @@
+.profile_card {
+  display: flex;
+  gap: 118px;
+  padding: 0 4rem;
+}
+.profile_image {
+  width: 194px;
+  height: 194px;
+}
+.profile_card_title {
+  display: flex;
+  align-items: center;
+  gap: 3.938rem;
+}
+.user_media_details {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
