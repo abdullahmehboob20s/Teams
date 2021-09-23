@@ -4,8 +4,8 @@ import "./NavLink.css";
 
 function NavLink(props) {
   const {
-    icon,
     title,
+    icon,
     to = "/",
     row = false,
     fontSize = "px-16",
