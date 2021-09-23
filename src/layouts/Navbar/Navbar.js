@@ -19,6 +19,7 @@ import postIcon from "assets/images/add-2.png";
 function Navbar(props) {
   const {
     showForwardBtnInResponsive = false,
+    showBottomBar = true,
     responsiveTitle,
     navbarLinks = [
       { title: "Home", icon: homeIcon, to: "/" },
@@ -38,7 +39,7 @@ function Navbar(props) {
   ];
   return (
     <div className="navbar">
-      <div className="bottom_bar">
+      <div className={showBottomBar ? "bottom_bar" : "bottom_bar hide"}>
         {bottomBarLinks.map((navLink, index) => (
           <NavLink
             gap="gap-3"

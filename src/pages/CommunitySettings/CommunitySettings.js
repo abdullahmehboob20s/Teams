@@ -19,8 +19,12 @@ function CommunitySettings() {
     { title: "Notifications", icon: bellIcon, to: "/" },
   ];
   return (
-    <div className="bg-color community_settings mb-inResponsive">
-      <Navbar navbarLinks={navbarLinks} responsiveTitle="SETTINGS" />
+    <div className="bg-color community_settings ">
+      <Navbar
+        navbarLinks={navbarLinks}
+        responsiveTitle="SETTINGS"
+        showBottomBar={false}
+      />
       <div>
         <Sidebar />
         <div className="community_settings_right_side">

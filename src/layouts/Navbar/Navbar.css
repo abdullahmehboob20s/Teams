@@ -89,6 +89,10 @@
     width: 50%;
     justify-content: space-between;
   }
+
+  .bottom_bar.hide {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
