@@ -231,6 +231,11 @@ p {
     padding-top: 3rem;
   }
 }
+@media (max-width: 880px) {
+  .mb-inResponsive {
+    margin-bottom: 1rem;
+  }
+}
 
 @media (max-width: 600px) {
   :root {

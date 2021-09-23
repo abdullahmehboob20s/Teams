@@ -13,7 +13,7 @@ import MySchedule from "layouts/MySchedule/MySchedule";
 
 function Home() {
   return (
-    <div className="bg-color pb-201">
+    <div className="bg-color pb-201 mb-inResponsive">
       <Navbar
         showForwardBtnInResponsive={true}
         responsiveTitle="Gareef Glashen"

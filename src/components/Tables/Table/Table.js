@@ -6,49 +6,49 @@ import star2 from "assets/images/star-2.png";
 function Table(props) {
   const { tableHead, tournament = true } = props;
   return (
-    <table className="table">
-      <thead>
-        <tr>
+    <div className="table">
+      <div className="thead">
+        <div className="tr">
           {tableHead.map((a) => (
-            <th>{a}</th>
+            <div className={a === "Tournament" ? "th flex-2" : "th"}>{a}</div>
           ))}
-        </tr>
-      </thead>
-      <tbody>
+        </div>
+      </div>
+      <div className="tbody">
         {new Array(7).fill("").map((item, index) => (
-          <tr>
+          <div className="tr">
             {tournament ? (
-              <td>
+              <div className="td flex-2">
                 <div className="table_cell">
                   <img className="tournament_img" src={img} alt="" />
                   <h5 className="weight-normal color-white">
                     PUBG tournament{" "}
                   </h5>
                 </div>
-              </td>
+              </div>
             ) : (
               ""
             )}
-            <td>
+            <div className="td">
               <div className="table_cell">
                 <img className="token_img" src={star2} alt="" />
                 <h5 className="weight-normal color-white">300</h5>
               </div>
-            </td>
-            <td>
+            </div>
+            <div className="td">
               <div className="table_cell ">
                 <h5 className="weight-normal color-white">$ 20 </h5>
               </div>
-            </td>
-            <td>
+            </div>
+            <div className="td">
               <div className="table_cell ">
                 <h5 className="weight-normal color-white">08/09/2021 </h5>
               </div>
-            </td>
-          </tr>
+            </div>
+          </div>
         ))}
-      </tbody>
-    </table>
+      </div>
+    </div>
   );
 }
 

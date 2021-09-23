@@ -49,3 +49,9 @@
   padding-left: 52px;
   margin-bottom: 28px;
 }
+
+@media (max-width: 760px) {
+  .sidebar {
+    display: none;
+  }
+}

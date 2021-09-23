@@ -13,6 +13,8 @@ import Input from "components/Input/Input";
 import leftArrow from "assets/images/left-arrow.png";
 import { Link } from "react-router-dom";
 import forwardicon from "assets/images/forward.png";
+import trophy2 from "assets/images/trophy-2.png";
+import postIcon from "assets/images/add-2.png";
 
 function Navbar(props) {
   const {
@@ -26,13 +28,32 @@ function Navbar(props) {
       { title: "Notifications", icon: bellIcon, to: "/" },
     ],
   } = props;
+
+  const bottomBarLinks = [
+    { title: "Home", icon: homeIcon, to: "/" },
+    { title: "Communities", icon: peopleIcon, to: "/community-settings" },
+    { title: "Post", icon: postIcon, to: "/" },
+    { title: "Notifications", icon: bellIcon, to: "/" },
+    { title: "Tournaments", icon: trophy2, to: "/" },
+  ];
   return (
     <div className="navbar">
+      <div className="bottom_bar">
+        {bottomBarLinks.map((navLink, index) => (
+          <NavLink
+            gap="gap-3"
+            title={navLink.title}
+            icon={navLink.icon}
+            to={navLink.to}
+          />
+        ))}
+      </div>
+
       <div className="nav_left gap-10">
         <img className="navbar_logo" src={logo} alt="" />
         <Input placeholder="Search" />
       </div>
-      <Link className="nav_left_2">
+      <Link to="/" className="nav_left_2">
         <img src={leftArrow} alt="" />
       </Link>
       <p className="nav_center_2">{responsiveTitle}</p>

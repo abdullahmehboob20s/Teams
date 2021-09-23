@@ -88,3 +88,9 @@
 
   cursor: pointer;
 }
+
+@media (max-width: 760px) {
+  .community_settings_right_side {
+    margin-left: 0;
+  }
+}

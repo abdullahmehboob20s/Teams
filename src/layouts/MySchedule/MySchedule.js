@@ -11,21 +11,25 @@ function MySchedule() {
   return (
     <div>
       <Tabs defaultTab={1}>
-        <div className="container-wrapper">
-          <div className="my_schedule_tabs">
-            <Tab
-              tabIndex={1}
-              className="my_schedule_tab"
-              activeClassName="my_schedule_tab_active"
-              label={<h3 className="weight-normal ">Joined Tournaments</h3>}
-            />
-            <Tab
-              tabIndex={2}
-              className="my_schedule_tab"
-              activeClassName="my_schedule_tab_active"
-              label={<h3 className="weight-normal ">Token Receipt</h3>}
-            />
+        <div className="my_schedule_tabs_wrapper">
+          <div className="container-wrapper">
+            <div className="my_schedule_tabs">
+              <Tab
+                tabIndex={1}
+                className="my_schedule_tab"
+                activeClassName="my_schedule_tab_active"
+                label={<h3 className="weight-normal ">Joined Tournaments</h3>}
+              />
+              <Tab
+                tabIndex={2}
+                className="my_schedule_tab"
+                activeClassName="my_schedule_tab_active"
+                label={<h3 className="weight-normal ">Token Receipt</h3>}
+              />
+            </div>
           </div>
+        </div>
+        <div className="container-wrapper">
           <TabPan tabIndex={1}>
             <Table
               tableHead={["Tournament", "Token", "Amount", "Date"]}

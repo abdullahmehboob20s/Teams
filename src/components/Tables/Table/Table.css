@@ -3,26 +3,43 @@
   border-collapse: collapse;
 }
 
-.table thead {
+.thead {
+  width: 100%;
   border-bottom: 0.5px solid #dad9dd;
 }
-.table th {
+.tbody {
+  width: 100%;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.th {
   padding: 1rem 0;
+  flex: 1;
 
-  font-style: normal;
   font-weight: 300;
   font-size: 1.563rem;
   line-height: 37px;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
-.table td,
-.table th {
+.td,
+.th {
   padding: 1rem 43px;
+  flex: 1;
 }
 
-.table tbody tr:nth-child(odd) {
+.th.flex-2 {
+  flex: 2;
+}
+.td.flex-2 {
+  flex: 2;
+}
+
+.tbody .tr:nth-child(odd) {
   background: #28303f;
 }
 
@@ -49,3 +66,60 @@
 /* .table td:not(:first-child) .table_cell {
   justify-content: center;
 } */
+
+@media (max-width: 820px) {
+  .tournament_img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  .th.flex-2 {
+    flex: 1;
+  }
+  .td.flex-2 {
+    flex: 1;
+  }
+
+  .td,
+  .th {
+    padding: 1rem 0rem;
+    flex: 1;
+    width: 100%;
+  }
+
+  .tr {
+    padding: 0 1rem;
+  }
+
+  .token_img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .th {
+    font-size: 10px;
+    line-height: 0.938rem;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .table_cell h5 {
+    font-size: 0.625rem;
+  }
+
+  .token_img {
+    width: 11.81px;
+    height: 12px;
+    margin-right: 0.2rem;
+  }
+
+  .tournament_img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.2rem;
+  }
+}

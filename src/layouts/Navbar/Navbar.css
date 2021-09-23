@@ -42,6 +42,10 @@
   display: block;
 }
 
+.bottom_bar {
+  display: none;
+}
+
 @media (max-width: 1300px) {
   .nav_center {
     gap: 1.6rem;
@@ -63,22 +67,27 @@
 
 @media (max-width: 880px) {
   .nav_center {
+    display: none;
+  }
+
+  .bottom_bar {
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     background-color: var(--clr-dark-blue);
     z-index: 100000000000;
     padding: 1rem 2rem;
+
     justify-content: space-between;
     gap: 0;
-    /* display: none; */
   }
-  .nav_center .nav_link {
+
+  .bottom_bar .nav_link {
     width: 50%;
-    /* border: 2px solid red; */
+    justify-content: space-between;
   }
 }
 
@@ -114,5 +123,12 @@
 
   .hamburger_icon.showForwardBtnInResponsive .forwardIcon {
     display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .bottom_bar .nav_link p {
+    /* border: 2px solid red; */
+    font-size: 9px;
   }
 }
