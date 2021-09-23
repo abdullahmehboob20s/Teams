@@ -10,9 +10,14 @@ import star from "assets/images/star.png";
 import user from "assets/images/user.png";
 import hamburger from "assets/images/hamburger.png";
 import Input from "components/Input/Input";
+import leftArrow from "assets/images/left-arrow.png";
+import { Link } from "react-router-dom";
+import forwardicon from "assets/images/forward.png";
 
 function Navbar(props) {
   const {
+    showForwardBtnInResponsive = false,
+    responsiveTitle,
     navbarLinks = [
       { title: "Home", icon: homeIcon, to: "/" },
       { title: "Create", icon: plusIcon, to: "/" },
@@ -27,6 +32,11 @@ function Navbar(props) {
         <img className="navbar_logo" src={logo} alt="" />
         <Input placeholder="Search" />
       </div>
+      <Link className="nav_left_2">
+        <img src={leftArrow} alt="" />
+      </Link>
+      <p className="nav_center_2">{responsiveTitle}</p>
+
       <div className="nav_center">
         {navbarLinks.map((navLink, index) => (
           <NavLink
@@ -38,17 +48,28 @@ function Navbar(props) {
         ))}
       </div>
       <div className="nav_right">
-        <NavLink
-          gap="gap-7"
-          fontSize="px-18"
-          title="12,200"
-          icon={star}
-          row={true}
-          to="/"
-          fontWeight="600"
-        />
-        <NavLink icon={user} to="/" />
-        <NavLink icon={hamburger} to="/" />
+        <span className="nav_right_links">
+          <NavLink
+            gap="gap-7"
+            fontSize="px-18"
+            title="12,200"
+            icon={star}
+            row={true}
+            to="/"
+            fontWeight="600"
+          />
+          <NavLink icon={user} to="/" />
+        </span>
+        <span
+          className={
+            showForwardBtnInResponsive
+              ? "hamburger_icon showForwardBtnInResponsive"
+              : "hamburger_icon"
+          }
+        >
+          <img className="forwardIcon" src={forwardicon} alt="" />
+          <NavLink icon={hamburger} to="/" />
+        </span>
       </div>
     </div>
   );

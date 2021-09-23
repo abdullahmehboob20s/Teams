@@ -24,6 +24,7 @@
   height: 140px;
   border-radius: 3px;
   overflow: hidden;
+  margin-right: 2.438rem;
 }
 
 .myTeam_stat_card {
@@ -39,4 +40,46 @@
 }
 .myTeam_stat_card:nth-child(3) {
   border-right: 1px solid rgba(150, 147, 158, 0.8);
+}
+
+@media (max-width: 760px) {
+  .my_teams_wrapper .container-wrapper {
+    width: 100%;
+  }
+
+  .my_teams {
+    padding: 3.313rem 2.1rem;
+  }
+  .my_teams_cards {
+    gap: 3rem;
+  }
+  .team_card_img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team_card_img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .my_team_title {
+    font-size: 1.5rem;
+  }
+
+  .team_card_img {
+    margin-right: 1.5rem;
+  }
+
+  .myTeam_stat_card:nth-child(1),
+  .myTeam_stat_card:nth-child(2) {
+    padding: 2rem 0;
+    padding-top: 0;
+  }
+  .myTeam_stat_card:nth-child(3),
+  .myTeam_stat_card:nth-child(4) {
+    padding: 2rem 0;
+  }
 }

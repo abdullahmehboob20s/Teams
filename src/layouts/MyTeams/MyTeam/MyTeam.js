@@ -7,12 +7,16 @@ import teamImage3 from "assets/images/team-image-3.png";
 
 function MyTeam() {
   return (
-    <div>
+    <div className="my_teams_wrapper">
       <div className="container-wrapper">
         <div className="my_teams mb-201">
           <div className="mb-119">
             <TitleBar
-              leading={<h2 className="weight-500 color-white">My Teams</h2>}
+              leading={
+                <h2 className="my_team_title weight-500 color-white">
+                  My Teams
+                </h2>
+              }
               justifySpace="space-between"
               text={
                 <Button
@@ -32,26 +36,26 @@ function MyTeam() {
             <TitleBar
               leading={<img className="team_card_img" src={teamImage} alt="" />}
               text={<h5 className="weight-normal color-white"> Team XDE</h5>}
-              gap="gap-62"
+              gap="0"
             />
             <TitleBar
               leading={<img className="team_card_img" src={teamImage} alt="" />}
               text={<h5 className="weight-normal color-white"> Team XDE</h5>}
-              gap="gap-62"
+              gap="0"
             />
             <TitleBar
               leading={
                 <img className="team_card_img" src={teamImage2} alt="" />
               }
               text={<h5 className="weight-normal color-white"> Team XDE</h5>}
-              gap="gap-62"
+              gap="0"
             />
             <TitleBar
               leading={
                 <img className="team_card_img" src={teamImage3} alt="" />
               }
               text={<h5 className="weight-normal color-white"> Team XDE</h5>}
-              gap="gap-62"
+              gap="0"
             />
           </div>
         </div>
@@ -60,7 +64,11 @@ function MyTeam() {
         <div className="my_teams ">
           <div className="mb-100">
             <TitleBar
-              leading={<h2 className="weight-500 color-white">STATISTICS</h2>}
+              leading={
+                <h2 className="my_team_title weight-500 color-white">
+                  STATISTICS
+                </h2>
+              }
             />
           </div>
 

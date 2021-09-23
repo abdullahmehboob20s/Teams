@@ -14,13 +14,16 @@ import MySchedule from "layouts/MySchedule/MySchedule";
 function Home() {
   return (
     <div className="bg-color pb-201">
-      <Navbar />
+      <Navbar
+        showForwardBtnInResponsive={true}
+        responsiveTitle="Gareef Glashen"
+      />
       <div className="bg-color pt-119">
         <Tabs defaultTab={2}>
-          <div className="wrapper-1131">
-            <ProfileCard />
-            <UserActivity />
+          <ProfileCard />
+          <UserActivity />
 
+          <div className="wrapper-1131">
             <div className="tabs_wrapper">
               <Tab
                 tabIndex={1}
@@ -29,7 +32,7 @@ function Home() {
                 label={
                   <>
                     <Grid />
-                    <h6 className="weight-normal ">POST</h6>
+                    <h6 className="tab_text weight-normal ">POST</h6>
                   </>
                 }
               />
@@ -40,7 +43,7 @@ function Home() {
                 label={
                   <>
                     <Collaboration />
-                    <h6 className="weight-normal ">MY TEAMS</h6>
+                    <h6 className="tab_text weight-normal ">MY TEAMS</h6>
                   </>
                 }
               />
@@ -51,7 +54,7 @@ function Home() {
                 label={
                   <>
                     <Calendar />
-                    <h6 className="weight-normal ">MY SCHEDULE</h6>
+                    <h6 className="tab_text weight-normal ">MY SCHEDULE</h6>
                   </>
                 }
               />

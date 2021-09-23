@@ -21,3 +21,9 @@
 .tab-active svg path {
   fill: #1380f0;
 }
+
+@media (max-width: 600px) {
+  .tab_text {
+    display: none;
+  }
+}

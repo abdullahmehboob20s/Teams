@@ -221,3 +221,29 @@ p {
   font-size: 12px;
   color: #ffffff;
 }
+
+@media (max-width: 1000px) {
+  :root {
+    font-size: 80%;
+  }
+
+  .pt-119 {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 73%;
+    --font-60px: 3rem;
+    --font-35px: 1.8rem;
+  }
+
+  .gap-106 {
+    gap: 2rem;
+  }
+
+  .mb-100 {
+    margin-bottom: 80px;
+  }
+}

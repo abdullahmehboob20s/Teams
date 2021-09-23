@@ -35,3 +35,9 @@
   line-height: 24px;
   color: #828284;
 }
+
+@media (max-width: 1300px) {
+  .input {
+    width: 160px;
+  }
+}
