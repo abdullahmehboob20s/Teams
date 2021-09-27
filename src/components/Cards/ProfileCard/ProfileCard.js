@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProfileCard.css";
 import profileImg from "assets/images/profile-img.png";
-import Button from "components/Button/Button";
 import TitleBar from "components/TitleBars/TitleBar/TitleBar";
 import diamond from "assets/images/diamond.png";
 import { Link } from "react-router-dom";
