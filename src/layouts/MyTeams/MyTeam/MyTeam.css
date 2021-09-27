@@ -4,7 +4,7 @@
   padding: 3.313rem 4.375rem;
   border-radius: 5px;
   /* margin-bottom: 12.563rem; */
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 }
 
 /* my_teams_cards */
@@ -28,7 +28,7 @@
 }
 
 .myTeam_stat_card {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .myTeam_stat_card:nth-child(1) {
@@ -40,6 +40,16 @@
 }
 .myTeam_stat_card:nth-child(3) {
   border-right: 1px solid rgba(150, 147, 158, 0.8);
+}
+
+.myTeamBtn {
+  background: #ec5312;
+  border-radius: 4px;
+  padding: 1.125rem 2.5rem;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (max-width: 760px) {
@@ -81,5 +91,15 @@
   .myTeam_stat_card:nth-child(3),
   .myTeam_stat_card:nth-child(4) {
     padding: 2rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .myTeamBtn {
+    background: #ec5312;
+    padding: 1rem 1.5rem;
+  }
+  .myTeamBtn h4 {
+    font-size: 12px;
   }
 }

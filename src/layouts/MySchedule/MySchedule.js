@@ -1,5 +1,4 @@
 import React from "react";
-import "./MySchedule.css";
 import Tabs from "components/Tabs/Tabs";
 import Tab from "components/Tabs/Tab";
 import TabPan from "components/Tabs/TabPan";
@@ -13,7 +12,7 @@ function MySchedule() {
       <Tabs defaultTab={1}>
         <div className="my_schedule_tabs_wrapper">
           <div className="container-wrapper">
-            <div className="my_schedule_tabs">
+            <div className="my_schedule_tabs mb-70">
               <Tab
                 tabIndex={1}
                 className="my_schedule_tab"

@@ -24,11 +24,11 @@
 
   /* font-sizes ==================*/
 
-  --font-60px: 3.75rem;
-  --font-35px: 2.188rem;
-  --font-28px: 1.75rem;
+  --font-60px: 3.5rem;
+  --font-35px: 1.9rem;
+  --font-28px: 1.5rem;
   --font-22px: 1.375rem;
-  --font-20px: 1.25rem;
+  --font-20px: 1.1rem;
   --font-18px: 1.125rem;
   --font-16px: 1rem;
   --font-14px: 0.875rem;
@@ -181,6 +181,9 @@ p {
 .mb-31 {
   margin-bottom: 31px;
 }
+.mb-70 {
+  margin-bottom: 70px;
+}
 .mb-100 {
   margin-bottom: 100px;
 }
@@ -222,6 +225,179 @@ p {
   color: #ffffff;
 }
 
+/* ============================================================================= */
+/* ============================================================================= */
+/* ============================================================================= */
+/* ================================= Pages Css ================================= */
+/* ============================================================================= */
+/* ============================================================================= */
+/* ============================================================================= */
+
+/* === Home Start === */
+
+.tabs_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  /* margin-bottom: 102px; */
+}
+.tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+  color: #8e8e8e;
+}
+
+.tab-active {
+  color: #1380f0;
+}
+.tab-active svg path {
+  fill: #1380f0;
+}
+
+/* === Home End === */
+
+/* === MySchedule Start === */
+
+.my_schedule_tabs {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #dad9dd;
+}
+.my_schedule_tab {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 36px;
+  color: #ffffff;
+  padding: 35px 40px;
+  margin: 0 3rem;
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+}
+.my_schedule_tab_active {
+  border-bottom: 5px solid #1380f0;
+}
+
+/* === MySchedule End === */
+
+/* === CommunitySettings Starts === */
+
+.community_settings {
+  /* min-height: 100vh; */
+  min-height: calc(100vh - 90px);
+  display: flex;
+}
+.community_settings_right_side {
+  background-color: #0f0f0f;
+  padding: 4rem;
+  flex: 1;
+}
+.community_settings_img {
+  display: block;
+  width: 91.4px;
+  height: 91.4px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.community_settings_link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: #44a0fe;
+  text-decoration: none;
+
+  margin-bottom: 72px;
+}
+
+.community_settings_form {
+  width: 100%;
+  max-width: 589px;
+  margin: 0 auto;
+}
+
+.community_settings_input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 49px;
+}
+
+.community_settings_input label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #b4b5b7;
+}
+
+.community_settings_input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #6b6c6e;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #ffffff;
+
+  padding-bottom: 0.875rem;
+}
+
+.community_settings_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8rem;
+}
+
+.formBtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #90959e;
+
+  cursor: pointer;
+}
+
+.btnFormSaveChanges {
+  padding: 14px 39px;
+  background: #0d59f0;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* === CommunitySettings End === */
+
+/* ============================================================================= */
+/* ============================================================================= */
+/* ============================================================================= */
+/* ================================= Media Queries ================================= */
+/* ============================================================================= */
+/* ============================================================================= */
+/* ============================================================================= */
+
 @media (max-width: 1000px) {
   :root {
     font-size: 80%;
@@ -230,10 +406,72 @@ p {
   .pt-119 {
     padding-top: 3rem;
   }
+
+  /* ==== pages css ==== */
 }
 @media (max-width: 880px) {
   .mb-inResponsive {
     margin-bottom: 1rem;
+  }
+
+  .mb-100 {
+    margin-bottom: 80px;
+  }
+  .mb-119 {
+    margin-bottom: 5rem;
+  }
+  .mb-201 {
+    margin-bottom: 8rem;
+  }
+
+  .mb-70 {
+    margin-bottom: 50px;
+  }
+
+  /* ==== pages css ==== */
+}
+
+@media (max-width: 800px) {
+  .my_schedule_tab {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 20px 30px;
+    margin: 0 0rem;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+  }
+  .my_schedule_tab h3 {
+    font-size: 1.5rem;
+  }
+
+  .my_schedule_tab_active {
+    border-bottom: 5px solid #1380f0;
+  }
+
+  .my_schedule_tabs_wrapper .container-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .community_settings_right_side {
+    margin-left: 0;
+  }
+
+  .community_settings_input {
+    gap: 10px;
+    margin-bottom: 29px;
+  }
+
+  .community_settings_input label {
+    font-size: 1.2rem;
+  }
+
+  .community_settings_input input {
+    font-size: 1.3rem;
+    padding-bottom: 0.875rem;
   }
 }
 
@@ -249,6 +487,72 @@ p {
   }
 
   .mb-100 {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+  }
+  .mb-119 {
+    margin-bottom: 3rem;
+  }
+  .mb-201 {
+    margin-bottom: 4rem;
+  }
+
+  .mb-70 {
+    margin-bottom: 25px;
+  }
+
+  /* ==== pages css ==== */
+
+  .tab_text {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .my_schedule_tab {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin: 0 0rem;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+  }
+  .my_schedule_tab h3 {
+    font-size: 12px;
+  }
+
+  .my_schedule_tab_active {
+    border-bottom: 5px solid #1380f0;
+  }
+
+  .community_settings {
+    min-height: calc(100vh - 90px);
+    display: flex;
+  }
+
+  .community_settings_right_side {
+    padding: 4rem 2.5rem;
+  }
+
+  .community_settings_input {
+    gap: 3px;
+    margin-bottom: 29px;
+  }
+
+  .community_settings_input label {
+    font-size: 1rem;
+  }
+
+  .community_settings_input input {
+    font-size: 1.1rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .btnFormSaveChanges {
+    padding: 14px 20px;
+  }
+  .btnFormSaveChanges h5 {
+    font-size: 12px;
   }
 }

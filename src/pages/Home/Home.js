@@ -1,5 +1,4 @@
 import Navbar from "layouts/Navbar/Navbar";
-import "./Home.css";
 import ProfileCard from "components/Cards/ProfileCard/ProfileCard";
 import Tabs from "components/Tabs/Tabs";
 import Tab from "components/Tabs/Tab";
@@ -24,7 +23,7 @@ function Home() {
           <UserActivity />
 
           <div className="wrapper-1131">
-            <div className="tabs_wrapper">
+            <div className="tabs_wrapper mb-100">
               <Tab
                 tabIndex={1}
                 className="tab"

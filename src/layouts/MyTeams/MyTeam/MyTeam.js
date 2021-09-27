@@ -19,15 +19,9 @@ function MyTeam() {
               }
               justifySpace="space-between"
               text={
-                <Button
-                  title={<h4 className="weight-normal"> Create New Team</h4>}
-                  style={{
-                    background: "#EC5312",
-                    borderRadius: "4px",
-                    padding: "1.125rem 2.5rem",
-                    color: "white",
-                  }}
-                />
+                <button className="myTeamBtn">
+                  <h4 className="weight-normal"> Create New Team</h4>
+                </button>
               }
             />
           </div>
@@ -78,7 +72,7 @@ function MyTeam() {
                 leading={<h2 className="color-white weight-500 ">WINS</h2>}
                 text={<h1 className="weight-bold color-blue"> 6</h1>}
                 direction="column"
-                gap="gap-106"
+                gap="gap-62"
               />
             </div>
             <div className="myTeam_stat_card">
@@ -86,7 +80,7 @@ function MyTeam() {
                 leading={<h2 className="color-white weight-500 ">LOSES</h2>}
                 text={<h1 className="weight-bold color-red">2</h1>}
                 direction="column"
-                gap="gap-106"
+                gap="gap-62"
               />
             </div>
             <div className="myTeam_stat_card">
@@ -94,7 +88,7 @@ function MyTeam() {
                 leading={<h2 className="color-white weight-500 ">MATCHES</h2>}
                 text={<h1 className="weight-bold color-blue">8</h1>}
                 direction="column"
-                gap="gap-106"
+                gap="gap-62"
               />
             </div>
             <div className="myTeam_stat_card">
@@ -102,7 +96,7 @@ function MyTeam() {
                 leading={<h2 className="color-white weight-500 ">WIN RATE</h2>}
                 text={<h1 className="weight-bold color-blue">80%</h1>}
                 direction="column"
-                gap="gap-106"
+                gap="gap-62"
               />
             </div>
           </div>
