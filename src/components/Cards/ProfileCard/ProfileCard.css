@@ -145,3 +145,9 @@
     font-size: 10px;
   }
 }
+
+/* @media (max-width: 500px) {
+  .profile_card_wrapper .wrapper-1131 {
+    width: 75%;
+  }
+} */

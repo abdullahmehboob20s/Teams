@@ -10,7 +10,7 @@ import gift2 from "assets/images/gift-2.png";
 
 function ProfileCard() {
   return (
-    <div>
+    <div className="profile_card_wrapper">
       <div className="wrapper-1131">
         <div className="profile_card">
           <div className="profile_card_left">
