@@ -132,4 +132,16 @@
     width: 90px;
     height: 90px;
   }
+
+  .user_media_details_2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .user_media_details_2 h5 {
+    font-size: 12px;
+  }
+  .user_media_details_2 h5 {
+    font-size: 10px;
+  }
 }

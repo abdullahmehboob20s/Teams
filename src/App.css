@@ -259,6 +259,11 @@ p {
   fill: #1380f0;
 }
 
+.teamTabsIcon svg {
+  /* border: 2px solid red; */
+  width: 20px;
+}
+
 /* === Home End === */
 
 /* === MySchedule Start === */
@@ -490,7 +495,7 @@ p {
     margin-bottom: 40px;
   }
   .mb-119 {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
   .mb-201 {
     margin-bottom: 4rem;
@@ -554,5 +559,14 @@ p {
   }
   .btnFormSaveChanges h5 {
     font-size: 12px;
+  }
+
+  .tabs_wrapper {
+    margin-top: 20px;
+    margin-bottom: 31px;
+  }
+
+  .tab:nth-child(2) {
+    flex: 1.5;
   }
 }

@@ -30,7 +30,9 @@ function Home() {
                 activeClassName="tab-active"
                 label={
                   <>
-                    <Grid />
+                    <div className="teamTabsIcon">
+                      <Grid />
+                    </div>
                     <h6 className="tab_text weight-normal ">POST</h6>
                   </>
                 }
@@ -41,7 +43,9 @@ function Home() {
                 activeClassName="tab-active"
                 label={
                   <>
-                    <Collaboration />
+                    <div className="teamTabsIcon">
+                      <Collaboration />
+                    </div>
                     <h6 className="tab_text weight-normal ">MY TEAMS</h6>
                   </>
                 }
@@ -52,7 +56,9 @@ function Home() {
                 activeClassName="tab-active"
                 label={
                   <>
-                    <Calendar />
+                    <div className="teamTabsIcon">
+                      <Calendar />
+                    </div>
                     <h6 className="tab_text weight-normal ">MY SCHEDULE</h6>
                   </>
                 }

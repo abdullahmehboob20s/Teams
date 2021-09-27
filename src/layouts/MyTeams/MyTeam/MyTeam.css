@@ -97,9 +97,43 @@
 @media (max-width: 500px) {
   .myTeamBtn {
     background: #ec5312;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.7rem;
   }
   .myTeamBtn h4 {
+    font-size: 10px;
+  }
+
+  .my_teams {
+    padding: 15px 27px;
+    padding-bottom: 56px;
+  }
+
+  .my_team_title {
+    font-size: 14px;
+  }
+
+  .team_card_img {
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+  }
+
+  .my_teams_cards {
+    gap: 50px 59px;
+  }
+
+  .my_teams_cards h5 {
     font-size: 12px;
+  }
+
+  .myTeam_stat_card .gap-62 {
+    gap: 21px;
+  }
+
+  .myTeam_stat_card h2 {
+    font-size: 14px;
+  }
+  .myTeam_stat_card h1 {
+    font-size: 30px;
   }
 }
