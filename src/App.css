@@ -259,9 +259,10 @@ p {
   fill: #1380f0;
 }
 
-.teamTabsIcon svg {
-  /* border: 2px solid red; */
-  width: 20px;
+.teamTabsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* === Home End === */
@@ -538,6 +539,7 @@ p {
 
   .community_settings_right_side {
     padding: 4rem 2.5rem;
+    background-color: transparent;
   }
 
   .community_settings_input {
@@ -568,5 +570,10 @@ p {
 
   .tab:nth-child(2) {
     flex: 1.5;
+  }
+
+  .teamTabsIcon svg {
+    /* border: 2px solid red; */
+    width: 20px;
   }
 }

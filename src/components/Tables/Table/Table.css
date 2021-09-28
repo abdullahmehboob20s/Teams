@@ -100,6 +100,23 @@
 }
 
 @media (max-width: 500px) {
+  .table_wrapper .container-wrapper {
+    width: 100%;
+  }
+  /* .tbody .tr:nth-child(odd) {
+    background: none;
+  } */
+
+  .thead .tr:nth-child(odd) {
+    background: #28303f;
+  }
+  .tbody .tr:nth-child(odd) {
+    background: transparent;
+  }
+  .tbody .tr:nth-child(even) {
+    background: #28303f;
+  }
+
   .th {
     font-size: 10px;
     line-height: 0.938rem;
@@ -120,6 +137,11 @@
   .tournament_img {
     width: 20px;
     height: 20px;
-    margin-right: 0.2rem;
+    margin-right: 2px;
+  }
+
+  .td {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

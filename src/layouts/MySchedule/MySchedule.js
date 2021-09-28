@@ -28,35 +28,33 @@ function MySchedule() {
             </div>
           </div>
         </div>
-        <div className="container-wrapper">
-          <TabPan tabIndex={1}>
-            <Table
-              tableHead={["Tournament", "Token", "Amount", "Date"]}
-              tableBodyData={[
-                {
-                  tournament: { img, title: "PUBG tournament" },
-                  token: { img: star2, title: "300" },
-                  amount: "$ 20",
-                  date: "08/09/2021",
-                },
-              ]}
-            />
-          </TabPan>
-          <TabPan tabIndex={2}>
-            <Table
-              tableHead={["Token", "Amount", "Date"]}
-              tournament={false}
-              tableBodyData={[
-                {
-                  tournament: { img, title: "PUBG tournament" },
-                  token: { img: star2, title: "300" },
-                  amount: "$ 20",
-                  date: "08/09/2021",
-                },
-              ]}
-            />
-          </TabPan>
-        </div>
+        <TabPan tabIndex={1}>
+          <Table
+            tableHead={["Tournament", "Token", "Amount", "Date"]}
+            tableBodyData={[
+              {
+                tournament: { img, title: "PUBG tournament" },
+                token: { img: star2, title: "300" },
+                amount: "$ 20",
+                date: "08/09/2021",
+              },
+            ]}
+          />
+        </TabPan>
+        <TabPan tabIndex={2}>
+          <Table
+            tableHead={["Token", "Amount", "Date"]}
+            tournament={false}
+            tableBodyData={[
+              {
+                tournament: { img, title: "PUBG tournament" },
+                token: { img: star2, title: "300" },
+                amount: "$ 20",
+                date: "08/09/2021",
+              },
+            ]}
+          />
+        </TabPan>
       </Tabs>
     </div>
   );

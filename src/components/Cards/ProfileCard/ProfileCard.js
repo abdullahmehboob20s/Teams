@@ -17,7 +17,7 @@ function ProfileCard() {
           </div>
           <div className="profile_card_right">
             <div className="profile_card_title mb-17">
-              <div>
+              <div className="profileCardDaimondTitle">
                 <h3 className="color-white weight-normal mb-17">Brucereef</h3>
                 <TitleBar
                   leading={<img src={diamond} alt="" />}
@@ -61,10 +61,10 @@ function ProfileCard() {
             </div>
             <div>
               <h5 className="detailTitle color-white mb-6">Gareef Glashen</h5>
-              <p className="px-14 color-grey mb-6">
+              <p className="detailSubTitle px-14 color-grey mb-6">
                 adipiscing elit. Sed nisi leo, euismod enim tristique.
                 Vestibulum egestas nec, diam ut iaculis ultricies leo nec
-                gravida. In sollicitudin maecenas habitant pretium ut diam.
+                gravida. In sollici
               </p>
               <Link className="decoration-none color-blue px-14">
                 www.samplewebsite.com

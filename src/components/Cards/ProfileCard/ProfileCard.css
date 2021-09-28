@@ -146,8 +146,32 @@
   }
 }
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
   .profile_card_wrapper .wrapper-1131 {
     width: 75%;
   }
-} */
+
+  .profile_card {
+    padding: 0 0rem;
+    gap: 4px;
+  }
+
+  .detailSubTitle {
+    font-size: 9px;
+  }
+
+  .edit_profile_btn {
+    gap: 8px;
+    font-size: 9px;
+    padding: 7px;
+  }
+
+  .edit_profile_btn img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .profileCardDaimondTitle .mb-17 {
+    margin-bottom: 6px;
+  }
+}
