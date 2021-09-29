@@ -9,8 +9,8 @@ function MyTeam() {
   return (
     <div className="my_teams_wrapper">
       <div className="container-wrapper">
-        <div className="my_teams mb-201">
-          <div className="mb-119">
+        <div className="my_teams my_team_margin">
+          <div className="my_teams_titles">
             <TitleBar
               leading={
                 <h2 className="my_team_title weight-500 color-white">
@@ -56,7 +56,7 @@ function MyTeam() {
       </div>
       <div className="container-wrapper">
         <div className="my_teams ">
-          <div className="mb-100">
+          <div className="my_teams_titles">
             <TitleBar
               leading={
                 <h2 className="my_team_title weight-500 color-white">

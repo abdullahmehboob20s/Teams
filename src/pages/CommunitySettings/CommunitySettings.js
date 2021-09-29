@@ -6,7 +6,6 @@ import rocketIcon from "assets/images/rocket-icon.png";
 import chartIcon from "assets/images/chart-icon.png";
 import Sidebar from "layouts/Sidebar/Sidebar";
 import pubgImg from "assets/images/pubg.png";
-import { Link } from "react-router-dom";
 import trash from "assets/images/trash.png";
 
 function CommunitySettings() {
@@ -27,9 +26,15 @@ function CommunitySettings() {
         <Sidebar />
         <div className="community_settings_right_side">
           <img className="community_settings_img" src={pubgImg} alt="" />
-          <Link className="community_settings_link">
+          <label htmlFor="fileToUpload" className="community_settings_link">
             Change Profile Picture
-          </Link>
+            <input
+              type="file"
+              name="fileToUpload"
+              id="fileToUpload"
+              accept="image/*"
+            />
+          </label>
 
           <form className="community_settings_form">
             <div className="community_settings_input">

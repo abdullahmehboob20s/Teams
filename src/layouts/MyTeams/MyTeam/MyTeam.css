@@ -4,14 +4,23 @@
   padding: 3.313rem 4.375rem;
   border-radius: 5px;
   /* margin-bottom: 12.563rem; */
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
+}
+
+.my_team_margin {
+  margin-bottom: 5rem;
 }
 
 /* my_teams_cards */
 .my_teams_cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 11.063rem;
+  justify-items: stretch;
+
+  gap: 4rem 11rem;
+}
+.my_teams_titles {
+  margin-bottom: 5rem;
 }
 .my_teams_cards_stats {
   display: grid;
@@ -135,5 +144,13 @@
   }
   .myTeam_stat_card h1 {
     font-size: 30px;
+  }
+
+  .my_teams_titles {
+    margin-bottom: 30px;
+  }
+
+  .my_team_margin {
+    margin-bottom: 53px;
   }
 }

@@ -181,6 +181,9 @@ p {
 .mb-31 {
   margin-bottom: 31px;
 }
+.mb-50 {
+  margin-bottom: 50px;
+}
 .mb-70 {
   margin-bottom: 70px;
 }
@@ -196,7 +199,7 @@ p {
 
 /* wrappers */
 .container-wrapper {
-  max-width: 2000px;
+  max-width: 1500px;
   width: 92%;
   margin: 0 auto;
 }
@@ -322,6 +325,11 @@ p {
   text-decoration: none;
 
   margin-bottom: 72px;
+  cursor: pointer;
+}
+
+.community_settings_link input {
+  display: none;
 }
 
 .community_settings_form {
