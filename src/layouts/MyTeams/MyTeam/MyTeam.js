@@ -1,6 +1,5 @@
 import "./MyTeam.css";
 import TitleBar from "components/TitleBars/TitleBar/TitleBar";
-import Button from "components/Button/Button";
 import teamImage from "assets/images/team-image.png";
 import teamImage2 from "assets/images/team-image-2.png";
 import teamImage3 from "assets/images/team-image-3.png";
